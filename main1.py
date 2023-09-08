@@ -12,7 +12,7 @@ st.set_page_config(page_title="Youtube Data Harvesting and Warehousing", page_ic
 
 st.title(":green[YouTube Data] :red[Harvesting] and :blue[Warehousing]")
 
-API_KEY = 'AIzaSyAdDGhfNwRD-QPUMTvYZOmpRVNxrIiCRTc'
+API_KEY = 'USE YOUR API KEY'
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 st.subheader(":red[Fetching Data and Uploading to MongoDB Database]")
@@ -242,7 +242,7 @@ if submit1:
             host="localhost",
             port=3306,
             user="root",
-            password="1234567890",
+            password="root",
             database="youtube_data_warehousing")
 
         cursor = connection.cursor()
@@ -288,7 +288,7 @@ connection = mysql.connector.connect(
     host="localhost",
     port=3306,
     user="root",
-    password="1234567890",
+    password="root",
     database="youtube_data_warehousing")
 
 cursor = connection.cursor()
